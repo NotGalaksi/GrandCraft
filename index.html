@@ -43,21 +43,420 @@
 <p> 1.8.7 </p> </br>
 <p> 1.8.8 </p> </br>
 <p> 1.8.9 </p> </br>
-<p> 1.9 </p> </br>
-<p> 1.9.1 </p> </br>
-<p> 1.9.2 </p> </br>
-<p> 1.9.3 </p> </br>
-<p> 1.9.4 </p> </br>
-<p> 1.10 </p> </br>
-<p> 1.10.1 </p> </br>
-<p> 1.10.2 </p> </br>
-<p> 1.11 </p> </br>
-<p> 1.11.1 </p> </br>
-<p> 1.11.2 </p> </br>
-<p> 1.12 </p> </br>
-<p> 1.12.1 </p> </br>
-<p> 1.12.2 </p> </br>
-<p> 1.13 </p> </br>
+<p> 
+1.9 </br>
+ </br>
+Added shields </br>
+- Attacking now has a "cool-down" delay, making it more important to time your attacks </br>
+- You can now hold items in both hands (default quick key to swap items is 'F') </br>
+- Swords have a special sweep attack </br>
+- Axes have a special crushing blow attack </br>
+- Added the elytra </br>
+- New mob: Shulker </br>
+- Expanded The End </br>
+- Added Chorus plants</br>
+- New Purpur blocks </br> 
+- New End Rod block </br>
+- Added dragon head block </br>
+- Ender Dragon can be resummoned </br>
+- Added beetroot and beetroot soup (from MC:PE) </br>
+- Added grass path block </br>
+- Added igloos </br>
+- Armor protection values have been lowered </br>
+- Added tipped arrows </br>
+- Added spectral arrows </br>
+- Added Frost Walker enchantment and frosted ice block </br>
+- Added a whole bunch of new sound effects </br>
+- Added sound effect subtitles </br>
+- Brewing Stand now requires Blaze Powder to activate </br>
+- Added skeleton riders </br>
+- We believe we've fixed MC-10 and a whole bunch of other issues </br>
+</p> </br>
+<p> 
+1.9.1 </br>
+ </br>
+Added elytra sound effects. </br>
+- Armor attribute generic.armorToughness </br>
+- Session ID is now no longer printed by the game to the log files or to the launcher. </br>
+- Entity selector c (count) now sorts on proximity using true coordinates, not coordinates snapped to the grid. </br>
+- Loot tables now also work in dispensers and droppers. </br>
+- Hoppers can now push and pull items to and from blocked chests. </br>
+- Increased limit per tick for scheduled tile ticks from 1,000 to 65,536  </br>
+</p> </br>
+<p>
+1.9.2 </br>
+ </br>
+- Fixed some connection issues with Realms </br>
+</p> </br>
+<p>
+1.9.3 </br>
+  </br>
+- New command: /stopsound . Usage: /stopsound [source] [sound]. </br>
+- /tp will no longer teleport the player to a y-coordinate outside the range -512 to 512. </br>
+</p> </br>
+<p>
+1.9.4 </br>
+  </br>
+- Remove incorrect snapshot version warning. </br>
+</p> </br>
+<p> 1.10 Blocks </br>
+ </br>
+Blocks </br>
+- Structure void </br>
+-- It is an intangible block used to indicate to the structure blocks that certain air blocks can be overridden by previously existing blocks in the destination. </br>
+-- They are invisible and have a small hitbox. </br>
+-- Allows for empty spaces in a structure. </br>
+- Magma block </br>
+-- Found in the Nether, generating 4 veins per chunk between Y=27 and Y=36. </br>
+-- Crafted using four magma cream. </br>
+-- Mobs and players take 1 Half Heart damage every second while touching it, similar to a cactus. </br>
+- Nether wart block </br>
+-- Crafted by filling a 3x3 square in the crafting table with nether wart. </br>
+-- It cannot be crafted back into nether wart. </br>
+- Red nether brick </br>
+-- Crafted by placing a 2x2 checkerboard of 2 nether brick and 2 nether wart in a crafting table. </br>
+- Bone block </br>
+-- Crafted by filling a 3x3 square in the crafting table with Bone Meal. </br>
+-- Placing it in a crafting table yields 9 bone meal back. </br>
+Mobs </br>
+- Polar bear </br>
+-- Adults and children spawn randomly as passive mobs in Ice Plains, Ice Mountains, and Ice Plains Spikes. </br>
+-- When hit, the adults will attack you, the cubs will run away (very fast, similar to baby zombies). </br>
+- Stray </br>
+-- 80% of skeletons spawned above ground in Ice Plains, Ice Mountains, and Ice Plains Spikes biomes will be strays. </br>
+-- Acts mostly like a regular skeleton. </br>
+-- Its SkeletonType tag is 2. </br>
+- Husk </br>
+-- 80% of zombies spawned above ground in Desert, Desert Hills, and Desert M biomes will be Husks. </br>
+-- Behaves mostly like a regular zombie </br>
+-- Its ZombieType tag is 6. </br>
+-- Does not burn in sunlight. </br>
+Options </br>
+-- A new 'Auto-jump' toggle has been added, which automatically makes the player jump when running towards a one block tall obstacle. </br>
+-- Options.txt now has its own version number. </br>
+-- VBOs are now enabled by default, overriding old options when upgrading. </br>
+</p> </br>
+<p> 
+1.10.1 </br> 
+  </br>
+Fixes: </br>
+Farmland blocks now have a 15/16 block tall hitbox. (formerly a full block). </br>
+- Slight player/mob offset when on Farmland Block. </br>
+- DataWatcher / EntityMetadata ID is based on the class load order ! Can cause many issues. </br>
+- Entities from old (<= 1.5.2) worlds are killed when loaded in current versions due to a typo in the health data fixer. </br>
+- Chat key bound to unicode char causes crash in creative inventory. </br>
+- Structure Block - Keyboard navigation: Unable to navigate in the "structure name" field of structure blocks, using the arrow-keys, pos1, end or the delete key. </br>
+- Ender Dragon Does not respawn. </br>
+</p> </br>
+<p> 
+1.10.2  </br>
+  </br>
+Fixes: </br>
+- Missing BlockEntity (Piston_Extension, ...). </br>
+</p> </br>
+<p> 
+1.11 </br>
+  </br>
+Mobs </br>
+- Vindicator </br>
+-- Separates their arms when aggravated, and holds an Iron Axe in their main hand.  </br>
+-- Hostile towards Players and Villagers. </br>
+-- Spawn in the Woodland Mansions upon generation. They will not respawn. </br>
+- Evoker </br>
+-- Added as an end-game challenge, or mini-boss. </br>
+-- Will always drop a Totem of Undying upon death. May drop Emeralds too. </br>
+-- In battle, they will summon Vexes and Fangs to attack. </br>
+- Vex </br>
+-- Spawns only when summoned by an Evoker. </br>
+-- Appears similar to ghosts, in that they are small, pale, flying mobs that can phase through blocks. </br>
+-- Shows red marks when about to attack. </br>
+-- Attacks Players and Villagers. </br>
+-- Holds an Iron Sword in their main hand. </br>
+- Llama </br>
+-- Spawns in Extreme Hills. </br>
+-- Drops Leather. </br>
+-- Has multiple skins, like Cats and Horses. </br>
+-- Attacks by spitting. </br> 
+Blocks </br>
+- Observer </br>
+-- Ported from the Pocket and Windows 10 editions. </br>
+-- Outputs a redstone signal when it detects a block update. </br>
+- Shulker box </br>
+-- Crafted in a Crafting Table as a single column, with a Chest in the middle of the row and a Shulker Shell both above and below the chest. </br>
+-- Works similar to a chest, but keeps its content when broken. </br>
+-- Uses the same opening and closing animations as the Shulker. </br>
+Items </br>
+- Shulker Shell </br>
+-- Has a 50% chance of being dropped by a Shulker upon death. </br>
+-- Crafted together with a Chest in a column to make Shulker Boxes. </br>
+- Totem of Undying </br>
+-- Evokers will always drop one of these upon death. </br>
+-- Holding it in either hand will resurrect you upon taking lethal damage. </br>
+- Exploration Map </br>
+-- Can only be obtained from Cartographer Villagers. </br>
+-- Used to locate Ocean Monuments and the new Woodland Mansions. </br>
+-- Works like a map, but shows the outlines of land and a single structure icon.  </br>
+World generation </br>
+- Woodland Mansion </br>
+-- Generates in Roofed Forest biomes. </br>
+-- Home to the Illagers. </br>
+-- Has three floors, where the bottom two are larger and the third is smaller. </br>
+-- Uses procedural generation and Structure Blocks for random layouts.  </br>
+</p> </br>
+<p> 
+1.11.1 </br>
+ </br>
+ ///
+</p> </br>
+<p>
+1.11.2 </br>
+  </br>
+Fixed bugs: </br>
+- Arrows shot from bow bounce on horse when moving or not and damage if fire arrows. </br>
+- Zombie Spawning. </br>
+- Incorrect dispenser sound with Flint & Steel. </br>
+- Elevator with slime block. </br>
+- Food Metre Updating Only Visually. </br>
+- Clicking a tipped arrow in mid-air will turn it into an item. </br>
+- Entity movement happens independently from executing commands. </br>
+</p> </br>
+<p>
+1.12 </br>
+  </br>
+Mobs </br>
+- Illusioner </br>
+-- New illager. </br>
+-- Blindness for 20 seconds then shoots with a bow. </br>
+-- Does not currently have a spawn egg, so can only be summoned with /summon illusion_illager. </br>
+- Parrots </br>
+-- Tamable with seeds </br>
+-- Fly around, but sit when "tired". </br>
+-- Follow and crowd around nearby mobs. </br>
+-- Imitates sounds of other mobs. </br>
+-- Parrots dance if playing music on a nearby jukebox. </br>
+-- Have 6 health. </br>
+-- Come in red, blue, green, cyan and gray. </br>
+Blocks </br>
+- Concrete </br>
+-- Comes in the 16 traditional dye colors. </br>
+-- Created when Concrete Powder comes into contact with still or flowing water. </br>
+- Concrete Powder </br>
+-- Comes in the 16 traditional dye colors. </br>
+-- Gravity affected (like Sand and Gravel). </br>
+-- When it touches water, it turns into a Concrete block.
+-- Craftable. Crafting: 4 Sand, 4 Gravel and one of any dye to get 8 Concrete Powder blocks. The recipe is shapeless. </br>
+- Glazed Terracotta </br>
+-- Comes in the 16 traditional dye colors. </br>
+-- Smelt any colored terracotta in a furnace to obtain the Glazed Terracotta of that color (not for regular terracotta). </br>
+-- Can be placed in 4 directions: North, South, West and East. </br>
+-- Will not "stick" to slime blocks if attached to the side, top or bottom, but will if attached to the front or back. </br>
+Items </br>
+- Knowledge Book </br>
+-- A green-colored book. </br>
+-- Currently obtainable only with the /give @p knowledge_book command. </br>
+-- A Knowledge Book with a Recipes NBT tag, which contains a list of item IDs, will be consumed and unlock the specified items recipes for any player that uses it. </br>
+- Spawn eggs </br>
+-- Parrot (new mob): Green with red dots.  </br>
+</p> </br>
+<p> 
+1.12.1 </br>
+ </br>
+- Updated game credits to include more Mojang staff. </br>
+- Credits scroll 50% faster when viewed directly from the menu screen than through the End Poem. </br>
+- Removed Splash "Better than Prey! </br>
+</p> </br>
+<p> 
+1.12.2  </br>
+ </br>
+- Updated the in game logo. </br>
+- Fixed an exploit and a bunch of other bugs. </br>
+</p> </br>
+<p> 
+1.13  </br>
+ </br>
+Blocks  </br>
+- Blue ice  </br>
+-- Generates in icebergs.  </br>
+-- More slippery than ice and packed ice.  </br>
+-- Crafted using 9 packed ice.  </br>
+- Bubble columns  </br>
+-- Created by magma blocks or soul sand in water at least 2 blocks deep.  </br>
+- Buttons, pressure plates and trapdoors  </br>
+-- Now have separate textures for all 6 types of wood.  </br>
+- Carved pumpkin  </br>
+-- A new block that has the old pumpkin texture.  </br>
+- Conduit  </br>
+-- Crafted using 1 Heart of the Sea and 8 Nautilus Shells.  </br>
+-- Can be activated by placing prismarine, dark prismarine, prismarine bricks and/or sea lanterns in 5x5 open squares around it.  </br>
+-- A complete structure will fully power the conduit.  </br>
+-- Emits a strong glow, at light level 15.  </br>
+- Coral  </br>
+-- Comes in 5 different variants, each with a different type: tube (blue), brain (pink), bubble (purple), fire (red), horn (yellow).  </br>
+-- Can only be placed underwater.  </br>
+-- Naturally generates in coral reefs.  </br>
+-- Can only be obtained with a tool enchanted with Silk Touch.  </br>
+- Coral block  </br>
+-- Comes in the same 5 variants as coral: tube (blue), brain (pink), bubble (purple), fire (red), horn (yellow).  </br>
+-- Must be mined with a Silk Touch tool in order to drop itself, otherwise they drop a dead coral block.  </br>
+-- Like coral, it naturally generates in coral reefs.  </br>
+- Coral fans  </br>
+-- Comes in the same 5 variants as coral: tube (blue), brain (pink), bubble (purple), fire (red), horn (yellow).  </br>
+-- Can be placed underwater on the sides and tops of blocks.  </br>
+-- Can be placed in air.  </br>
+-- Naturally generates on the sides of coral blocks in coral reefs.  </br>
+-- Can only be obtained with a tool enchanted with Silk Touch.  </br>
+- Dead coral blocks  </br>
+-- Comes in the same 5 variants as coral: tube, brain, bubble, fire, horn.  </br>
+-- Obtained when mining a coral block without a Silk Touch tool, or when none of the six sides of a coral block are touching the water.  </br>
+-- Cannot be turned back into coral.  </br>
+- Dead coral fans  </br>
+-- Comes in the same 5 variants as coral: tube, brain, bubble, fire, horn.  </br>
+-- Generate in coral reef structures.  </br>
+-- Can only be obtained with a tool enchanted with Silk Touch.  </br>
+- Dried kelp block  </br>
+-- Smelts 20 items when used as fuel in a furnace.  </br>
+-- Crafted from dried kelp, and can also be crafted back into dried kelp. </br> 
+- Kelp  </br>
+-- Can only be placed underwater, requiring at least one water block above it.  </br>
+-- Generate in ocean biomes, except warm oceans.  </br>
+-- Can grow multiple blocks high.  </br>
+-- Has animated textures.  </br>
+-- Can be smelted into dry kelp.  </br>
+- Prismarine stairs and slabs  </br>
+-- Both come in all 3 variants: prismarine, dark prismarine, and prismarine bricks.  </br>
+-- Stairs can be crafted with 6 of their respective material.  </br>
+-- Slabs can be crafted with 3 of their respective material.  </br>
+- Seagrass  </br>
+-- Like kelp, seagrass also comes in a tall variant.  </br>
+-- Has animated textures.  </br>
+-- Generates in oceans (including underwater caves), rivers, and swamplands.  </br>
+-- Can additionally be generated when using bone meal on any block underwater.  </br>
+-- Drops from turtles when killed.  </br>
+- Sea pickles  </br>
+-- They generate in warm oceans, especially around coral reefs.  </br>
+-- Up to 4 of them can be placed on a block.  </br>
+-- Each one adds 3 to the light level, but only when placed underwater.  </br>
+-- Can be smelted into lime dye.  </br>
+- Shulker Boxes  </br>
+-- Added a non-dyed shulker box. </br> 
+- Stripped logs  </br>
+-- A barkless variant of logs.  </br>
+-- Created by using an axe on a log block.  </br>
+-- Act as regular logs, and can still be used to craft planks.  </br>
+- Stripped wood  </br>
+-- A variant of wood with the side texture of stripped logs on all faces.  </br>
+-- Created by using an axe on a wood block.  </br>
+-- Act as regular logs, and can still be used to craft planks.  </br>
+- Turtle eggs  </br>
+-- Created by breeding turtles.  </br>
+-- Stepping on turtle eggs will break them.  </br>
+-- After a while, they will become slightly cracked and then very cracked.  </br>
+Items  </br>
+- Arrow of Slow Falling  </br>
+-- Gives the player the Slow Falling status effect.  </br>
+- Arrow of the Turtle Master  </br>
+-- Functions the same as the potion of the Turtle Master.  </br>
+- Buried treasure exploration maps  </br>
+-- Found in underwater ruins chests.  </br>
+-- Leads the player to buried treasure.  </br>
+- Debug stick  </br>
+-- A technical item used to cycle between different block states.  </br>
+- Dried kelp  </br>
+-- Obtained from smelting kelp.  </br>
+-- Can be eaten, restoring 1 Half hunger point.  </br>
+-- Can also be crafted into dried kelp blocks.  </br>
+- Bucket of Fish  </br>
+-- Come in 4 variants: cod, salmon, pufferfish, and tropical fish buckets.  </br>
+-- Obtained by using a water bucket on a fish mob.  </br>
+-- When used, it will place a water source block and spawn the corresponding fish inside it.  </br>
+- Heart of the Sea  </br>
+-- Used to craft conduits.  </br>
+-- They generate in buried treasure chests (in stacks of 1).  </br>
+- Kelp  </br>
+-- Can be used to place a kelp plant underwater.  </br>
+-- Can be dried in a furnace to create dried kelp.  </br>
+- Mushroom blocks  </br>
+-- Now appear in the creative inventory.  </br>
+- Mushroom stems  </br>
+-- Have an item form and appear in the creative inventory.  </br>
+- Nautilus Shell  </br>
+-- Used to craft conduits.  </br>
+-- Can be obtained by fishing.  </br>
+-- Drowned can spawn holding a nautilus shell.  </br>
+- Petrified oak slab  </br>
+-- Now has a model.  </br>
+-- Is the old wood slab that acts like a stone slab.  </br>
+- Phantom membrane  </br>
+-- Dropped by phantoms.  </br>
+-- Used to repair elytra.  </br>
+-- Can be brewed into potions of Slow Falling.  </br>
+- Potion of Slow Falling  </br>
+-- Brewed with phantom membrane.  </br>
+-- Gives the player the Slow Falling status effect for 1:30.  </br>
+-- Brewing it with redstone dust will extend the effect duration to 4 minutes.  </br>
+-- Like all potions, can be turned into splash potion and lingering potion, using gunpowder and dragon's breath. </br> 
+- Potion of the Turtle Master  </br>
+-- Will give Slowness IV and Resistance III for 1 minute.  </br>
+-- Brewing it with redstone dust will extend the effect duration to 3 minutes.  </br>
+-- Brewing it with glowstone dust will enhance the effects to Slowness VI and Resistance IV.  </br>
+-- Like all potions, can be turned into splash potion and lingering potion, using gunpowder and dragon's breath.  </br>
+- Scutes  </br>
+-- Dropped when baby turtles grow up.  </br>
+-- Can be used to craft turtle shells.  </br>
+- Trident  </br>
+-- A new weapon.  </br>
+-- Can be thrown by using it, or be used as a melee weapon by attacking, dealing 9 Heart damage.  </br>
+-- Obtainable by killing drowned.  </br>
+- Turtle shells  </br>
+-- Crafted from scutes.  </br>
+-- Can be used as a helmet, adding 2 armor points.  </br>
+-- Can be used to brew the potion of the Turtle Master from an awkward potion.  </br>
+- Wood  </br>
+-- Now have an item form and appear in the creative inventory.  </br>
+-- They can now be crafted, 4 logs in a square yield 3 wood.  </br>
+-- They now follow identical placement rules to logs and other such blocks.  </br>
+Mobs  </br>
+- Dolphins  </br>
+-- Spawn in any ocean that isn't frozen.  </br>
+-- Neutral mobs. Like wolves and zombie pigmen, dolphins will attack in groups if one is angered.  </br>
+-- Can be fed using raw cod, but they don't breed.  </br>
+-- Play with nearby items by picking them up and dropping them after a very short moment.  </br>
+-- Occasionally jumps out of water like real-life dolphins.  </br>
+-- Chase after boats and jump over water surfaces.  </br>
+-- They suffocate after spending too much time on land.  </br>
+-- If they start drowning, they will swim to the surface.  </br>
+-- Give the player the Dolphin's Grace status effect when the player swims near them.  </br>
+-- They can help players find buried treasure; when they are fed raw cod, they will swim to the nearest shipwreck or underwater ruins.  </br>
+- Drowned  </br>
+-- Spawn in all oceans and rivers, as well as in swamps and underwater ruins.  </br>
+-- Zombies will morph into drowned after a while if they are in water.  </br>
+-- Drowned can spawn with tridents and nautilus shells, allowing you to get them in survival.  </br>
+-- Do not float, but can swim (although they prefer to walk).  </br>
+-- All drowned have a melee attack, and ones with tridents have a ranged attack.  </br>
+-- Like zombies, drowned will attack baby turtles and stomp on and destroy turtle eggs.  </br>
+- Fish mobs  </br>
+-- Cod: Spawn in cold, normal, and lukewarm ocean biomes. Form groups of up to 9.  </br>
+-- Salmon: Spawn in frozen ocean, cold ocean and river biomes. Form groups of up to 6.  </br>
+-- Pufferfish: Spawn in lukewarm and warm ocean biomes. Inflate themselves when a player gets near.  </br>
+-- Tropical Fish  </br>
+-- They drop themselves when killed.  </br>
+-- Outside of water, they flop around before suffocating.  </br>
+-- They can be caught with a water bucket.  </br>
+- Phantoms (Mob B)  </br>
+-- Was voted in by viewers of MineCon Earth.  </br>
+-- Spawn in the Overworld at high altitudes, and swoops down in groups of around 3 or 4 to attack players that have not slept in a while.  </br>
+-- The player must be above sea level.  </br>
+-- Are considered to be undead mobs.  </br>
+-- Drop 0-1 phantom membrane.  </br>
+- Turtles  </br>
+-- Water mobs which will make nests comprised of eggs on shorelines throughout various biomes. </br>
+-- Have a baby variant, which hatch from the eggs, and move into the water when born.  </br>
+-- Can be bred using seagrass.  </br>
+-- Spawn on warm beaches in small groups.  </br>
+-- Lay eggs in their home beach.  </br>
+-- Drop 0-2 seagrass upon death.  </br>
+-- You can craft scutes into a bigger turtle shell. </br>
+</p> </br>
 <p> 1.13.1 </p> </br>
 <p> 1.13.2 </p> </br>
 <p> 1.14 </p> </br>
